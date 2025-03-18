@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {
+        font-family: Arial, sans-serif;
+    }
+    .container {
+        width: 300px;
+        padding: 20px;
+        border: 2px solid black;
+    }
+    .container h3 {
+        text-align: right;
+        margin: 0;
+        padding-bottom: 10px;
+    }
+    table {
+        width: 100%;
+    }
+    td {
+        padding: 5px;
+    }
+    input {
+        width: 100%;
+        padding: 5px;
+    }
+    .btn {
+        width: 100%;
+        padding: 8px;
+        background-color: gray;
+        border: none;
+        color: white;
+        cursor: pointer;
+        font-weight: bold;
+    }
+    .checkbox-container {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h3>ADD PRODUCT</h3>
+    <table>
+        <tr>
+            <td>Name</td>
+            <td><input type="text" name="name"></td>
+        </tr>
+        <tr>
+            <td>Buying Price</td>
+            <td><input type="text" name="buying_price"></td>
+        </tr>
+        <tr>
+            <td>Selling Price</td>
+            <td><input type="text" name="selling_price"></td>
+        </tr>
+        <tr>
+            <td class="checkbox-container">
+                <input type="checkbox" name="display"> Display
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2"><button class="btn">SAVE</button></td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>
